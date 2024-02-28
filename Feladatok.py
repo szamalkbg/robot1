@@ -125,3 +125,13 @@ class Feladatok():
         wait(1380)
         self.robot.stop(Stop.COAST)
         pass
+
+    def vonalkovet(self):
+        # felváltva hajtom a motorokat egyik gyorsabb másik lassabb ha letér csere
+        while True:
+            if self.cs.reflection() > 35:
+                self.bm.run(200)
+                self.jm.run(100)
+            else:
+                self.jm.run(200)
+                self.bm.run(100)
