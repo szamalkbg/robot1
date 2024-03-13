@@ -25,7 +25,7 @@ oraiMunka=Feladatok.Feladatok()
 #oraiMunka.korbefordul3()
 # Hangkezelés, téglavilágítás
 oraiMunka.koszon()
-
+motormozgas()
 
 
 # Write your program here.

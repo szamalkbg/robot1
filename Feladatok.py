@@ -135,3 +135,10 @@ class Feladatok():
             else:
                 self.jm.run(200)
                 self.bm.run(100)
+
+    def motormozgas(self):
+        while True:
+            self.robot.on_for_seconds(steering=0.2, speed=500, seconds=1)
+            if self.cs.reflection() > 35:
+                self.robot.turn_degrees(45, speed=500)
+                Sound.beep()
